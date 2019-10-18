@@ -1,4 +1,4 @@
-import { configure } from '@storybook/html';
+import {configure} from '@storybook/html';
 
 // automatically import all files ending in *.stories.js
-configure(require.context('../stories', true, /\.stories\.(js|md|mdx)$/), module);
+configure(require.context('../src', true, /\.stories\.(js|md|mdx)$/), module);
