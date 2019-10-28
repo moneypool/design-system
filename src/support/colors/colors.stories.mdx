@@ -1,0 +1,36 @@
+import {Meta} from '@storybook/addon-docs/blocks';
+import {colors, colorBox, colorSection, colorText} from './colors';
+
+<Meta title="Support|Colors" />
+
+# Colors
+
+## support/colors
+
+## Color palette
+
+<div style={{display: 'flex', flex: 'wrap'}}>
+  {colors.map(({hex}) => (
+    <div style={colorBox(hex)}>{hex}</div>
+  ))}
+</div>
+
+## Color utilities
+
+### Background classes
+
+<div style={{display: 'flex', flexDirection: 'column', flex: 'wrap'}}>
+  {colors.map(({variable, hex}) => (
+    <div style={colorSection(hex)}>.bg-{variable}</div>
+  ))}
+</div>
+
+### Text classes
+
+<div style={{display: 'flex', flex: 'wrap'}}>
+  {colors.map(({variable, hex}) => (
+    <div style={colorText(hex)}>.text-{variable}</div>
+  ))}
+</div>
+
+## Color variables
