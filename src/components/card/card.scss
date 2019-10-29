@@ -1,0 +1,146 @@
+.card {
+  display: flex;
+  min-height: fit-content;
+  box-shadow: 0 0 2rem 0 rgba(136, 152, 170, 0.15);
+  background-color: #ffffff;
+  border-radius: 6px;
+  position: relative;
+  overflow: hidden;
+}
+
+.card:hover {
+  box-shadow: 0 0 4rem 0 rgba(136, 152, 170, 0.3);
+}
+
+/*Pool Card*/
+.card.pool {
+  margin: 5px;
+  flex-direction: column;
+  width: 200px;
+  height: 250px;
+  cursor: pointer;
+}
+
+.pool__image {
+  background-image: url('https://picsum.photos/200/300');
+  position: relative;
+  height: 40%;
+  width: 100%;
+}
+
+.pool__body {
+  padding: 5px;
+  height: 80px;
+}
+
+.pool__title {
+  height: 50%;
+  margin: 0.5em 0.5em 0em 0.5em;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.pool__subtitle {
+  position: relative;
+  height: 50%;
+  margin: 0em 1em 0em 1em;
+  font-size: 12px;
+  color: #6a737d;
+}
+
+.pool__footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+  padding: 10px 5px 0px 5px;
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
+  color: #00d64f;
+  font-weight: 600;
+}
+/*Pool Card*/
+
+/*Transaction Card*/
+.card.transaction {
+  margin: 5px 5px 10px 5px;
+  padding: 16px;
+  width: 450px;
+}
+
+.card.transaction > * {
+  margin: 2px;
+}
+
+.transaction__column {
+  display: flex;
+  flex-direction: column;
+}
+
+.transaction__column > * {
+  margin: 5px;
+}
+
+.transaction__profileImage {
+  background-image: url('https://picsum.photos/200/300');
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: inline-block;
+  line-height: 1;
+  -o-object-fit: cover;
+  object-fit: cover;
+  overflow: hidden;
+  vertical-align: middle;
+}
+
+.transaction__title {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.transaction__date {
+  position: relative;
+  font-size: 12px;
+  color: #6a737d;
+}
+
+.transaction__comments {
+  position: relative;
+  font-size: 20px;
+}
+
+.transaction__pool-card {
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+  height: 125px;
+  background-color: #ffffff;
+  border-radius: 6px;
+  box-shadow: 0 0 1rem 0 rgba(136, 152, 170, 0.15);
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.transaction__pool-card:hover {
+  box-shadow: 0 0 4rem 0 rgba(136, 152, 170, 0.15);
+}
+
+.transaction__pool-card-image {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.transaction__pool-card-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25%;
+  padding: 1px;
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
+  font-weight: 600;
+  font-size: 12px;
+  color: #6a737d;
+}
+/*Transaction Card*/
