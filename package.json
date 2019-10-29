@@ -13,7 +13,9 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "toast-me": "^1.2.4"
+  },
   "devDependencies": {
     "@babel/core": "^7.6.4",
     "@storybook/addon-a11y": "^5.2.4",
