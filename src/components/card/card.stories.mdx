@@ -1,0 +1,44 @@
+import {pool, transaction} from './source.js';
+// import {clipboard} from '../../utils/functions.js';
+import {Story, Meta, Preview} from '@storybook/addon-docs/blocks';
+
+<Meta title="Components|Card" />
+
+# Card
+
+## Tarjeta genérica para mostar grupos de contenido
+
+> Algunos tipos de tarjetas disponibles
+
+<div style={{ display: 'flex' }}>
+  <section class="card pool m-1" onClick={() => clipboard(pool)}>
+    <aside class="pool__image" />
+    <section class="pool__body">
+      <section class="pool__title">Fiesta de Soni</section>
+      <section class="pool__subtitle">$400 por persona</section>
+      <footer class="pool__footer">$15,000.00</footer>
+    </section>
+  </section>
+
+  <section class="card transaction m-1" onClick={() => clipboard(transaction)}>
+    <section class="transaction__column">
+      <a href="#">
+        <aside class="transaction__profileImage" />
+      </a>
+    </section>
+    <section class="transaction__column">
+      <section class="transaction__title">
+        Juan Pérez pagó en el Pool "Carne Asada"
+      </section>
+      <section class="transaction__date">
+        Septiembre 26, 2019
+      </section>
+      <section class="transaction__comments">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi sunt
+        voluptatum tenetur dicta minus ratione quam dolores accusamus
+        accusantium, impedit a, expedita, quibusdam ipsam placeat cupiditate
+        voluptatibus dignissimos in necessitatibus.
+      </section>
+    </section>
+  </section>
+</div>

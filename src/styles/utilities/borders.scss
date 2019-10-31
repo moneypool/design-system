@@ -1,0 +1,12 @@
+.circle {
+  border-radius: 50% !important;
+}
+
+// Border colors
+@each $name, $color in $colors {
+  .border-#{$name} {
+    box-shadow: 0 0 2rem 0 rgba(136, 152, 170, 0.15);
+    border-radius: 6px;
+    border-color: $color !important;
+  }
+}

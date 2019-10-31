@@ -1,0 +1,27 @@
+// Color utilities
+// stylelint-disable block-opening-brace-space-before, comment-empty-line-before
+
+// background colors
+@each $name, $color in $colors {
+  .bg-#{$name} {
+    background-color: $color !important;
+  }
+}
+
+// text colors
+@each $name, $color in $colors {
+  .text-#{$name} {
+    color: $color !important;
+  }
+}
+
+// link colors
+@each $name, $color in $colors {
+  .link-#{$name} {
+    color: $color !important;
+
+    &:hover {
+      color: $blue !important;
+    }
+  }
+}
