@@ -1,0 +1,16 @@
+// Fixed-width, centered column for site content.
+// Handy container styles that match our breakpoints
+
+// 544px
+.container {
+  max-width: $width;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+// 768px
+.container-md {
+  max-width: $container-md;
+  margin-right: auto;
+  margin-left: auto;
+}
