@@ -1,0 +1,38 @@
+// Text hiding for image based text replacement.
+// Higher performance than -9999px because it only renders
+// the size of the actual text, not a full 9999px box.
+@mixin hide-text() {
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+}
+
+@mixin h1 {
+  font-size: $h1-size-mobile;
+  font-weight: $font-weight-bold;
+
+  // 32px on desktop
+  @include breakpoint(md) {
+    font-size: $h1-size;
+  }
+}
+
+@mixin h2 {
+  font-size: $h2-size-mobile;
+  font-weight: $font-weight-bold;
+
+  // 24px on desktop
+  @include breakpoint(md) {
+    font-size: $h2-size;
+  }
+}
+
+@mixin h3 {
+  font-size: $h3-size-mobile;
+  font-weight: $font-weight-bold;
+
+  // 20px on desktop
+  @include breakpoint(md) {
+    font-size: $h3-size;
+  }
+}

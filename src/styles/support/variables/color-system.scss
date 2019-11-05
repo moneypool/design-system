@@ -1,0 +1,28 @@
+//
+// Variables
+$blue: #40b2ff;
+$blue-dark: #1ca2ff;
+$green: #28a745;
+$red: #d73a49;
+$yellow: #fada3d;
+$black: rgba(0, 0, 0, 0.9);
+$gray-dark: rgba(0, 0, 0, 0.6);
+$gray: rgba(0, 0, 0, 0.3);
+$gray-light: rgba(0, 0, 0, 0.12);
+$gray-extra-light: #fafbfc;
+$white: #ffffff;
+
+// Color map
+$colors: (
+  blue: $blue,
+  blue-dark: $blue-dark,
+  green: $green,
+  red: $red,
+  yellow: $yellow,
+  black: $black,
+  gray-dark: $gray-dark,
+  gray: $gray,
+  gray-light: $gray-light,
+  gray-extra-light: $gray-extra-light,
+  white: $white
+) !default;
