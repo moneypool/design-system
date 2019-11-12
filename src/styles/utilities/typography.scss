@@ -1,0 +1,103 @@
+body {
+  font-family: $body-font;
+}
+
+h1,
+.h1 {
+  font-size: $h1-size-mobile !important;
+  font-weight: $font-weight-bold !important;
+
+  @include breakpoint(md) {
+    font-size: $h1-size !important;
+  }
+}
+
+h2,
+.h2 {
+  font-size: $h2-size-mobile !important;
+  font-weight: $font-weight-bold !important;
+
+  @include breakpoint(md) {
+    font-size: $h2-size !important;
+  }
+}
+
+h3,
+.h3 {
+  font-size: $h3-size-mobile !important;
+  font-weight: $font-weight-bold !important;
+
+  @include breakpoint(md) {
+    font-size: $h3-size !important;
+  }
+}
+
+h4,
+.h4 {
+  font-size: $h4-size !important;
+  font-weight: $font-weight-bold !important;
+
+  @include breakpoint(md) {
+    font-size: $h4-size !important;
+  }
+}
+
+h5,
+.h5 {
+  font-size: $h5-size !important;
+  font-weight: $font-weight-bold !important;
+
+  @include breakpoint(md) {
+    font-size: $h5-size !important;
+  }
+}
+
+h6,
+.h6 {
+  font-size: $h6-size !important;
+  font-weight: $font-weight-bold !important;
+
+  @include breakpoint(md) {
+    font-size: $h6-size !important;
+  }
+}
+
+.lh-default {
+  line-height: $lh-default;
+}
+
+.lh-condensed {
+  line-height: $lh-condensed;
+}
+
+.lh-condensed-ultra {
+  line-height: $lh-condensed-ultra;
+}
+
+.text-light {
+  font-weight: $font-weight-light;
+}
+
+.text-normal {
+  font-weight: $font-weight-normal;
+}
+
+.text-semibold {
+  font-weight: $font-weight-semibold;
+}
+
+.text-bold {
+  font-weight: $font-weight-bold;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-lowercase {
+  text-transform: lowercase;
+}
+
+.text-underline {
+  text-decoration: underline;
+}
