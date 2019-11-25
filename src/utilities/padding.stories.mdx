@@ -1,0 +1,75 @@
+import {Meta} from '@storybook/addon-docs/blocks';
+
+<Meta title="Utilities|Padding" />
+
+# Padding
+
+## utilities/padding
+
+Padding utilities take advantage of our spacing scale.
+
+## Shorthand
+
+Since padding utilities have many variations and will be used in many places, we use a shorthand naming convention to help keep class names succinct.
+
+| Shorthand | Description              |     | Scale units | Pixel value |
+| --------- | ------------------------ | --- | ----------- | ----------- |
+| p         | margin                   |     | 0           | 0px         |
+| t         | top                      |     | 1           | 4px         |
+| r         | right                    |     | 2           | 8px         |
+| b         | bottom                   |     | 3           | 16px        |
+| l         | left                     |     | 4           | 24px        |
+| x         | horizontal, left & right |     | 5           | 32px        |
+| y         | vertical, top & bottom   |     | 6           | 40px        |
+
+## Uniform paddings
+
+Use uniform spacing utilities to apply equal margin to all sides of an element. These utilities can change or override default paddings, and can be used with a spacing scale from 0-6.
+
+<div style={{ display: 'flex', padding: 10 }}>
+
+  <section style={{ backgroundColor: 'white', borderRadius: 5, boxShadow: '0 0 2rem 0 rgba(136, 152, 170, 0.4)', margin: 20 }} class="p-0">p-0</section>
+
+  <section style={{ backgroundColor: 'white', borderRadius: 5, boxShadow: '0 0 2rem 0 rgba(136, 152, 170, 0.4)', margin: 20 }} class="p-1">p-1</section>
+
+  <section style={{ backgroundColor: 'white', borderRadius: 5, boxShadow: '0 0 2rem 0 rgba(136, 152, 170, 0.4)', margin: 20 }} class="p-2">p-2</section>
+
+  <section style={{ backgroundColor: 'white', borderRadius: 5, boxShadow: '0 0 2rem 0 rgba(136, 152, 170, 0.4)', margin: 20 }} class="p-3">p-3</section>
+
+  <section style={{ backgroundColor: 'white', borderRadius: 5, boxShadow: '0 0 2rem 0 rgba(136, 152, 170, 0.4)', margin: 20 }} class="p-4">p-4</section>
+
+  <section style={{ backgroundColor: 'white', borderRadius: 5, boxShadow: '0 0 2rem 0 rgba(136, 152, 170, 0.4)', margin: 20 }} class="p-5">p-5</section>
+
+  <section style={{ backgroundColor: 'white', borderRadius: 5, boxShadow: '0 0 2rem 0 rgba(136, 152, 170, 0.4)', margin: 20 }} class="p-6">p-6</section>
+
+</div>
+
+## Directional paddings
+
+Use directional utilities to apply margin to an individual side, or the X and Y axis of an element. Directional utilities can change or override default paddings, and can be used with a spacing scale of 0-6.
+
+<div style={{ display: 'flex', padding: 10 }}>
+
+  <section style={{ backgroundColor: 'white', borderRadius: 5, boxShadow: '0 0 2rem 0 rgba(136, 152, 170, 0.4)', margin: 20 }} class="pt-5">pt-5</section>
+
+  <section style={{ backgroundColor: 'white', borderRadius: 5, boxShadow: '0 0 2rem 0 rgba(136, 152, 170, 0.4)', margin: 20 }} class="pb-5">pb-5</section>
+
+  <section style={{ backgroundColor: 'white', borderRadius: 5, boxShadow: '0 0 2rem 0 rgba(136, 152, 170, 0.4)', margin: 20 }} class="pr-5">pr-5</section>
+
+  <section style={{ backgroundColor: 'white', borderRadius: 5, boxShadow: '0 0 2rem 0 rgba(136, 152, 170, 0.4)', margin: 20 }} class="pl-5">pl-5</section>
+
+  <section style={{ backgroundColor: 'white', borderRadius: 5, boxShadow: '0 0 2rem 0 rgba(136, 152, 170, 0.4)', margin: 20 }} class="px-5">px-5</section>
+
+  <section style={{ backgroundColor: 'white', borderRadius: 5, boxShadow: '0 0 2rem 0 rgba(136, 152, 170, 0.4)', margin: 20 }}    class="py-5">py-5</section>
+
+  <section style={{ backgroundColor: 'white', borderRadius: 5, boxShadow: '0 0 2rem 0 rgba(136, 152, 170, 0.4)', margin: 20 }}    class="py-5 px-5">py-5 px-5</section>
+
+</div>
+
+## Responsive padding
+
+Use `p-responsive` for responsive paddings inside containers. Supports `standard` and `md` breakpoints.
+
+<div style={{ display: 'flex', padding: 10 }}>
+  <section style={{ backgroundColor: 'white', borderRadius: 5, boxShadow: '0 0 2rem 0 rgba(136, 152, 170, 0.4)', margin: 20 }} class="p-responsive">p-responsive</section>
+</div>
